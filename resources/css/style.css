@@ -114,6 +114,8 @@ a:hover {
   display: flex;
   padding: 2rem 1.5rem;
   align-items: center;
+  border: groove;
+  border-top: none;
 }
 
 .jumbotron img {
@@ -157,6 +159,7 @@ a:hover {
     align-items: center;
     flex-direction: column;
     padding: 0rem;
+    border: none;
   }
 
   .jumbotron img {
@@ -382,6 +385,11 @@ footer {
 
 /*Learning*/
 
+.learning {
+  border-style: groove;
+  margin-top: 2rem;
+}
+
 .learning .courses {
   padding-left: 4.5rem;
   margin-right: 4.5rem;
@@ -488,6 +496,10 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+
+  .learning {
+    border: none;
+  }
 
   .learning .courses {
     display: flex;
