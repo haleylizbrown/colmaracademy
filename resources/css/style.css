@@ -41,6 +41,9 @@ header {
   font-family: "Philosopher", sans-serif;
   color: black;
   border-style: groove;
+  position: fixed;
+  z-index: 5;
+  background: linear-gradient(to bottom right, silver, black);
 }
 
 header .school-desktop {
@@ -70,11 +73,11 @@ nav ul li{
 }
 
 a {
-  color: black;
+  color: silver;
 }
 
 a:hover {
-  color: silver;
+  color: darkgray;
 }
 
 .campus,
@@ -121,6 +124,8 @@ a:hover {
   align-items: center;
   border: groove;
   border-top: none;
+  position: relative;
+  top: 4rem;
 }
 
 .jumbotron img {
@@ -169,7 +174,7 @@ a:hover {
 
   .jumbotron img {
     width: 100%;
-    margin: 0%;
+    margin-top: 2rem;;
     border-radius: 1rem;
   }
 
@@ -192,6 +197,8 @@ a:hover {
   display: flex;
   align-content: center;
   justify-content: center;
+  position: relative;
+  top: 4rem;
 }
 
 .practice {
@@ -392,7 +399,9 @@ footer {
 
 .learning {
   border-style: groove;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  position: relative;
+  top: 2rem;
 }
 
 .learning .courses {
@@ -574,11 +583,13 @@ footer {
   display: flex;
   width: 100%;
   border-bottom: 1px solid black;
+  position: relative;
+  top: 2rem;
 }
 
 .exhibit h2 {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
@@ -677,7 +688,9 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  position: relative;
+  top: 1rem;
 }
 
 .footer .terms {
