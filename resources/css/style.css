@@ -40,6 +40,7 @@ header {
   height: 4rem;
   font-family: "Philosopher", sans-serif;
   color: black;
+  border-style: groove;
 }
 
 header .school-desktop {
@@ -94,7 +95,6 @@ a:hover {
   .school-mobile {
     display: flex;
     width: 100%;
-    height: 4rem;
     justify-content: space-around;
     align-items: center;
   }
@@ -188,13 +188,13 @@ a:hover {
 
 .practice {
   width: 60%;
+  margin-left: 1.5rem;
 }
 
 .practice img {
   margin-top: 0%;
   width: 100%;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  margin-right: 1.5rem;
   padding-top: 4rem;
 }
 
@@ -218,7 +218,10 @@ footer {
 .events {
   width: 40%;
   margin-left: 1.5rem;
-  padding-top: 4rem;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  background-color: silver;
+  color: black;
 }
 
 .events .orientation-desktop {
@@ -293,6 +296,10 @@ footer {
   text-decoration: underline;
 }
 
+#readmore:hover {
+  color: blue;
+}
+
 /*Middle Media Queries*/
 
 @media only screen and (min-width: 1039px) {
@@ -311,6 +318,7 @@ footer {
 
 @media only screen and (max-width: 1024px)
 {
+
   .practice {
     display: none;
   }
@@ -320,6 +328,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
 
   .orientation-desktop img {
@@ -341,6 +350,11 @@ footer {
     padding-top: 4rem;
 }
 
+  .orientation-mobile,
+  .campus-mobile,
+  .lecture-mobile {
+    background-color: silver;
+  }
 
   .orientation-mobile img,
   .campus-mobile img,
@@ -370,7 +384,7 @@ footer {
 
 .learning .courses {
   padding-left: 4.5rem;
-  padding-right: 4.5rem;
+  margin-right: 4.5rem;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: row;
@@ -379,7 +393,7 @@ footer {
 
 .learning .courses2 {
   padding-left: 4.5rem;
-  padding-right: 4.5rem;
+  margin-right: 4.5rem;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: row;
@@ -393,6 +407,8 @@ footer {
   height: auto;
   width: 266.3px;
   padding-right: 2rem;
+  margin-top: 1rem;
+  padding-left: 2rem;
 }
 
 .courses2 img,
@@ -402,12 +418,16 @@ footer {
   height: auto;
   width: 266.3px;
   padding-right: 2rem;
+  margin-top: 1rem;
+  padding-left: 2rem;
 }
 
 .learning h4,
 .learning h6,
 .learning p {
   padding-left: 1rem;
+  color: black;
+  padding-left: 2rem;
 }
 
 .learning h2 {
@@ -429,7 +449,43 @@ footer {
   padding-bottom: 1.5rem;
 }
 
+.engineering,
+.art,
+.design,
+.data,
+.business,
+.marketing {
+  background-color: silver;
+}
+
+.engineering,
+.art,
+.data,
+.business {
+  margin-right: 1rem;
+}
+
+
+
 /*Learning Media Queries*/
+
+@media only screen and (min-width: 1039px) {
+  .engineering,
+  .art,
+  .design,
+  .data,
+  .business,
+  .marketing {
+    background-color: silver;
+  }
+
+  .engineering,
+  .art,
+  .data,
+  .business {
+    margin-right: 1rem;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
 
@@ -440,6 +496,7 @@ footer {
     padding-bottom: 0rem;
     padding-left: 0rem;
     padding-right: 0rem;
+    width: 100%;
   }
 
   .learning .courses2 {
@@ -449,6 +506,7 @@ footer {
     padding-bottom: 2rem;
     padding-left: 0rem;
     padding-right: 0rem;
+    width: 100%;
   }
 
   .learning img,
@@ -475,6 +533,7 @@ footer {
     justify-content: center;
     height: auto;
     border-style: outset;
+    margin-right: 0rem;
   }
 
   .engineering h4,
@@ -545,6 +604,9 @@ footer {
 .prototype {
   display: flex;
   align-items: center;
+  background-color: silver;
+  color: black;
+  margin-bottom: 0.5rem;
 }
 
 .prototype .description {
@@ -554,6 +616,8 @@ footer {
 .then {
   display: flex;
   align-items: center;
+  background-color: silver;
+  color: black;
 }
 
 .then .description {
