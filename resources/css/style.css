@@ -92,6 +92,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
+
+  header {
+    border: none;
+  }
+
   .school-mobile {
     display: flex;
     width: 100%;
